@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Internship Tracker AI</title>
+<meta name="description" content="An AI-assisted tracker for students applying to many roles at once. Built solo: interviews, a small v1, real usage.">
+<style>
+:root{--bg:#faf8f5;--card:#fff;--ink:#1d1b19;--mute:#6b665f;--line:#e8e2d9;--accent:#1f6f5c;--accent-soft:#e3f1ec;--warn:#b26a00;--warn-soft:#fdf1dc}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14130f;--card:#1d1b17;--ink:#f1ede6;--mute:#a49d92;--line:#2c2a24;--accent:#58c4a7;--accent-soft:#18302a;--warn:#f0b254;--warn-soft:#33270f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px 72px}
+header{padding:64px 0 32px}
+.eyebrow{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600}
+h1{font-size:clamp(34px,6vw,52px);line-height:1.1;margin:12px 0 16px;letter-spacing:-.02em}
+.lede{font-size:19px;color:var(--mute);max-width:640px;margin:0}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.pill{font-size:13px;padding:5px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--mute)}
+.pill.status{background:var(--warn-soft);color:var(--warn);border-color:transparent;font-weight:600}
+section{margin-top:48px}
+h2{font-size:24px;margin:0 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mute);margin:0 0 20px;font-size:16px}
+.question{font-size:22px;line-height:1.4;padding:24px 26px;background:var(--accent-soft);border-radius:14px;margin:0;border-left:4px solid var(--accent)}
+.steps{display:grid;gap:14px;grid-template-columns:repeat(2,1fr)}
+.step{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.step .n{font-size:13px;font-weight:700;color:var(--accent)}
+.step h3{margin:4px 0 6px;font-size:17px}
+.step p{margin:0;font-size:15px;color:var(--mute)}
+.step .st{display:inline-block;margin-top:12px;font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--warn-soft);color:var(--warn)}
+.step .st.done{background:var(--accent-soft);color:var(--accent)}
+.empty{background:var(--card);border:1px dashed var(--line);border-radius:14px;padding:22px 24px;color:var(--mute)}
+.empty b{color:var(--ink)}
+ol.find{margin:14px 0 0;padding-left:22px}
+ol.find li{margin:6px 0}
+.files{display:grid;gap:10px}
+.files a{display:flex;justify-content:space-between;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;color:var(--ink);text-decoration:none}
+.files a:hover{border-color:var(--accent)}
+.files small{color:var(--mute);font-size:14px}
+.files span.go{color:var(--accent);font-weight:600;white-space:nowrap}
+.note{font-size:15px;color:var(--mute);border-top:1px solid var(--line);margin-top:56px;padding-top:20px}
+.note a{color:var(--accent)}
+@media (max-width:620px){.steps{grid-template-columns:1fr}header{padding-top:40px}.question{font-size:19px;padding:20px}.files a{flex-direction:column;align-items:flex-start;gap:4px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="eyebrow">Student product</div>
+  <h1>Internship Tracker AI</h1>
+  <p class="lede">What actually breaks when a student applies to 30 roles, and can a small AI-assisted tool fix it?</p>
+  <div class="meta">
+    <span class="pill status">In progress: findings being added</span>
+    <span class="pill">Built solo, tested with classmates</span>
+    <span class="pill">By Jyestha Singh</span>
+  </div>
+</header>
+
+<section>
+  <h2>The question</h2>
+  <p class="question">What do students lose track of when applying to many internships and jobs, and which one or two features would fix it?</p>
+</section>
+
+<section>
+  <h2>How I'm studying it</h2>
+  <p class="sub">Four steps. Every number on this page comes from my own interviews and real usage.</p>
+  <div class="steps">
+    <div class="step"><div class="n">STEP 1</div><h3>Interview classmates</h3><p>Talk to 5 classmates who are applying to many roles. How do they track applications today, and where does it break?</p><span class="st">Not started</span></div>
+    <div class="step"><div class="n">STEP 2</div><h3>Scope a small v1</h3><p>Pick 3 to 4 features backed by the interviews, and write down what is cut and why.</p><span class="st">Not started</span></div>
+    <div class="step"><div class="n">STEP 3</div><h3>Build and test the AI</h3><p>Build v1, then check the AI suggestion against a written set of test cases and log what fails.</p><span class="st">Not started</span></div>
+    <div class="step"><div class="n">STEP 4</div><h3>Ship, log, iterate</h3><p>Give it to the same classmates, log real usage, cut what is ignored, and write the v2 roadmap.</p><span class="st">Not started</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>What I found</h2>
+  <p class="sub">What the interviews and the first weeks of usage showed.</p>
+  <div class="empty"><b>Findings land here after the interviews.</b> Each one will show the problem, how many classmates raised it, and what I did about it.
+    <ol class="find"><li>Biggest problem</li><li>Second problem</li><li>Third problem</li></ol>
+  </div>
+</section>
+
+<section>
+  <h2>What I built and cut</h2>
+  <p class="sub">The v1 scope, the cut list, and how the AI feature was tested.</p>
+  <div class="empty"><b>Coming after the build.</b> This section will show the live app, the features that made v1, what I cut and why, the AI test results, and real usage numbers.</div>
+</section>
+
+<section>
+  <h2>Project files</h2>
+  <p class="sub">The working documents behind the study.</p>
+  <div class="files">
+    <a href="https://github.com/jyesthasingh/internship-tracker-ai/blob/main/docs/PRD.md"><div>Product requirements doc<br><small>Problem, users, solution, metrics, risks</small></div><span class="go">Open →</span></a>
+    <a href="https://github.com/jyesthasingh/internship-tracker-ai/blob/main/docs/v1-scope.md"><div>v1 scope<br><small>What is in, and what is cut and why</small></div><span class="go">Open →</span></a>
+    <a href="https://github.com/jyesthasingh/internship-tracker-ai/blob/main/docs/ai-eval.md"><div>AI feature test cases<br><small>How the AI suggestion is checked</small></div><span class="go">Open →</span></a>
+    <a href="https://github.com/jyesthasingh/internship-tracker-ai/blob/main/research/interview-guide.md"><div>Interview guide<br><small>The questions I ask classmates</small></div><span class="go">Open →</span></a>
+  </div>
+</section>
+
+<p class="note">Limits: a small group and early use show direction, not proof. Interviews are anonymized. Built by <a href="https://www.linkedin.com/in/jyestha-singh-898bb5337/">Jyestha Singh</a>. <a href="https://github.com/jyesthasingh/internship-tracker-ai">View the repository</a>.</p>
+</div>
+</body>
+</html>
